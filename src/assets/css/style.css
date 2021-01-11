@@ -1,0 +1,342 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Verdana';
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Verdana"), url("../fonts/verdana.ttf");
+}
+
+.ant-layout {
+  background-color: #fff !important;
+}
+
+.ant-card-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px !important;
+}
+
+.ant-card-cover > img {
+  width: 100px !important;
+}
+
+.ant-card-body h2 {
+  font-size: 12px !important;
+  color: #474747 !important;
+  font-weight: 600;
+}
+
+.ant-card-bordered {
+  border: 0px solid #f0f0f0;
+}
+
+.ant-layout-header {
+  padding: 0 20px !important;
+}
+
+.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.action button {
+  background-color: #f1a837 !important;
+  border-radius: 50px;
+  border: 0px;
+  color: #000;
+  font-weight: 600;
+}
+
+.action button:hover {
+  color: #000;
+  background-color: #febc44 !important;
+}
+
+.ant-layout-sider {
+  width: 290px !important;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 290px !important;
+          flex: 0 0 290px !important;
+  min-width: 290px !important;
+  background-color: #fff !important;
+}
+
+.breadcrum {
+  min-height: 30px;
+  line-height: 30px;
+}
+
+.breadcrumheading {
+  font-weight: 600;
+  color: #000 !important;
+}
+
+.cartcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #efefef;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(222, 222, 222, 0.75);
+          box-shadow: 0px 0px 2px 0px rgba(222, 222, 222, 0.75);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cartcardimg > img {
+  width: 50px !important;
+  margin-right: 30px;
+}
+
+.cartcarddesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 30px;
+}
+
+.cartcarddesc h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cartcarddesc p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cartcardremove {
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  text-transform: uppercase;
+}
+
+.cartcardremove > a {
+  color: #000 !important;
+}
+
+.cartcardplusminus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartcardplusminus div:nth-child(2) {
+  margin: 0px 10px;
+}
+
+.cartcardplusminus div > button {
+  background: #fff !important;
+  color: #000;
+  border: #ccc 1px solid;
+  font-size: 11px;
+}
+
+.cartcardplusminus div > button:hover {
+  color: #000;
+  border: #ccc 1px solid;
+}
+
+.cartcardplusminus div > button:focus {
+  color: #000;
+  border: #ccc 1px solid;
+}
+
+.cartSidebar {
+  border: #ebebeb 1px solid;
+}
+
+.cartSidebar h2 {
+  background: #f7f7f7;
+  color: #969696;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+  border-bottom: #ebebeb 1px solid;
+}
+
+.cartSidebar ul {
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cartSidebar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cartSidebar li:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cartSidebar .sidebarBg {
+  background: #f7f7f7 !important;
+  border-top: #ebebeb 1px solid;
+}
+
+.productCard {
+  margin-bottom: 20px !important;
+}
+
+.price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.price {
+  color: #000 !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priceold:nth-of-type(2) {
+  color: #a0a0a0 !important;
+  text-decoration: line-through;
+  font-size: 12px;
+  margin-left: 5px;
+  font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.productOffer {
+  color: #388e3c !important;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header {
+  width: 100%;
+  background-color: #4269e9 !important;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav a {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: #fff !important;
+}
+
+.nav a > span {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: #fff !important;
+}
+
+.headerLogo {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: #f1a837 !important;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  position: relative;
+  margin-right: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.search input {
+  height: 34px;
+  width: 100% !important;
+  position: absolute;
+}
+
+footer {
+  background-color: #4269e9 !important;
+  line-height: 0px !important;
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .ant-col {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

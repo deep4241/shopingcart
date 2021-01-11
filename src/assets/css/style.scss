@@ -1,0 +1,260 @@
+body{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana';
+}
+//mixin//
+@font-face {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Verdana'), url('../fonts/verdana.ttf');
+  }
+@mixin flexrow{
+	display: flex;
+    flex-direction: row;
+}
+@mixin flexcolm{
+	display: flex;
+    flex-direction:column;
+}
+@mixin flexcenter{
+	display: flex;
+    align-items: center;
+}
+@mixin flexcenterjend{
+	display: flex;
+    align-items: center;
+    justify-content:flex-end!important;
+}
+@mixin headerfa ($par1, $par2){
+    font-size:$par1;
+    margin-right:$par2;
+}
+//variable//
+$bg_header: #4269e9!important;
+$bg_white: #fff!important;
+$bg_black: #000!important;
+$bg_grey: #a0a0a0!important;
+$bg_darkgrey: #474747!important;
+$bg_green: #388e3c!important;
+$bg_yellow: #f1a837!important;
+$bg_lightyellow: #febc44!important;
+
+.ant-layout{
+    background-color:$bg_white;
+}
+
+//product card CSS//
+.ant-card-cover{
+    display: flex;
+    justify-content:center;
+    padding-top:20px!important;
+
+}
+.ant-card-cover > img{
+    width:100px!important;
+}
+.ant-card-body h2{
+    font-size:12px!important;
+    color:$bg_darkgrey; 
+    font-weight:600;
+    
+}
+.ant-card-bordered {
+    border:0px solid #f0f0f0;
+}
+.ant-layout-header {
+    padding: 0 20px!important;
+}
+.action {
+    @include flexcenter; 
+    justify-content: center; 
+}
+.action button{
+    background-color:$bg_yellow;
+    border-radius:50px;
+    border:0px;
+    color:#000;
+    font-weight: 600;
+    &:hover {
+        color: #000;
+        background-color:$bg_lightyellow;
+    }
+
+}
+.ant-layout-sider {
+    width: 290px!important;
+    flex: 0 0 290px!important;
+    min-width: 290px!important;
+    background-color:#fff!important;
+}
+.breadcrum{
+    min-height: 30px;
+    line-height: 30px;
+}
+.breadcrumheading{
+    font-weight: 600;
+    color:#000!important;
+}
+
+.cartcard{
+    @include flexrow; 
+    border:1px solid #efefef;
+    box-shadow:0px 0px 2px 0px rgba(222, 222, 222, 0.75);
+    padding:10px;
+    margin-bottom:10px;
+}
+.cartcardimg >  img{ 
+    width:50px!important;
+    margin-right:30px;
+
+}
+.cartcarddesc{ 
+    @include flexcolm;  
+    line-height:30px;
+    h2{ 
+        font-size:12px; 
+        font-weight:400;
+    }
+    p{ 
+        font-size:12px; 
+        font-weight:600;
+    }
+}
+.cartcardremove{ 
+    line-height:30px;
+    font-size:12px; 
+    font-weight:600;
+    @include flexcenterjend;
+    text-transform: uppercase  
+}
+.cartcardremove > a{  
+    color:#000!important; 
+}
+.cartcardplusminus{ 
+    @include flexrow;
+    align-items: center;  
+}
+.cartcardplusminus div:nth-child(2){ 
+    margin: 0px 10px; 
+}
+.cartcardplusminus div > button{ 
+    background:$bg_white;
+    color:#000;
+    border:#ccc 1px solid;
+    font-size:11px;
+    &:hover {
+        color: #000;
+        border:#ccc 1px solid;
+    }
+    &:focus {
+        color: #000;
+        border:#ccc 1px solid;
+    }
+}
+.cartSidebar{
+    border:#ebebeb 1px solid;  
+    h2{
+        background: #f7f7f7;
+        color: #969696; 
+        font-size:14px;
+        font-weight:600; 
+        padding:10px;
+        border-bottom:#ebebeb 1px solid;  
+    }
+    ul{margin:0px;
+        padding:0px; 
+        display: flex; 
+    }
+    li{display: flex;
+       flex-direction:column;
+       width:50%;
+       padding:10px;
+       font-size:12px;  
+       font-weight:600;   
+    }
+    li:nth-child(2){display: flex;
+        align-items: flex-end;
+     }
+     .sidebarBg{
+        background: #f7f7f7!important;
+        border-top:#ebebeb 1px solid;
+     }
+     
+}
+.productCard{
+    margin-bottom:20px!important;}
+.price-box{
+    @include flexrow;  
+}
+.price{
+    color:$bg_black;  
+    font-size:12px;
+    font-weight:600;
+}
+.priceold:nth-of-type(2) {
+    color:$bg_grey;  
+    text-decoration: line-through;
+    font-size:12px;
+    margin-left:5px;
+    font-weight:600;
+    flex-grow:1;
+}
+.productOffer{
+    color:$bg_green;  
+    font-size:12px;
+    font-weight:600;
+    justify-content: end;
+}
+//Header CSS //
+
+header{
+	width: 100%;
+	background-color:$bg_header;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav a{
+    @include headerfa(1.4rem, 1rem);
+    color:$bg_white; 
+}
+.nav a > span{
+    @include headerfa(1.4rem, 1rem);
+    color:$bg_white; 
+}
+.headerLogo{
+    @include headerfa(1.4rem, 1rem);
+    color:$bg_yellow;
+}
+.search{
+    @include flexcenter;
+    width:50%;
+    position: relative;
+    margin-right: 15px;
+    justify-content: flex-end;
+
+    input{
+        height:34px;
+        width:100%!important;
+        position: absolute;
+    }
+
+}
+//footer CSS //
+footer{
+    background-color:$bg_header;
+    line-height:0px!important;
+    color: #fff!important;
+
+}
+
+@media only screen and (max-width:768px) {
+    .ant-col {
+        flex-basis: 100%!important;
+        width: 100%!important;
+    }
+  }
